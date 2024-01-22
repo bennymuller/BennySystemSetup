@@ -20,12 +20,19 @@ brew 'zsh-autosuggestions'
 
 # Once "mas" is installed we can use that command to install apps from the app store
 
-# For this example we are only installing "The Unarchiver", 
-# which is a file compressor/decompressor, like a Mac winzip
+mas "FBX Review", id: 868956490
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Milanote Web Clipper", id: 1485329099
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "ScreenPosition", id:1229498568
+mas "TestFlight", id: 899247664
+mas "TextSniper",  id: 1528890965
 mas "The Unarchiver", id: 425424353
-# mas "Keynote", id: 409183694
-# mas "Numbers", id: 409203825
-# mas "Pages", id: 409201541
+mas "Userscripts", id:1463298887
+mas "Xcode", id: 497799835
+
 
 # I have commented the other apps, but feel free to uncomment them and add your own
 # The "app name string" is used for identification, while 
@@ -34,19 +41,47 @@ mas "The Unarchiver", id: 425424353
 # and in the link you'll find a number, that is the app id
 # Example: https://apps.apple.com/mx/app/keynote/id409183694
 
-
 # Most of the cool apps are not available from the AppStore
 # For those we use the cask command
 
-# For this example we'll only install Chrome
-cask "google-chrome"
-# cask "visual-studio-code"
-# cask "microsoft-edge"
-# cask "docker"
-# cask "zoom"
-# cask "miro"
-# cask "figma"
-
 # Uncomment all that you want or you could also search for 
 # any app you want on https://brew.sh/ to get the cask id
+
+# this bash command will dump all brew installed apps to a textfile..
+# sudo find / -iname *.app > ~/Desktop/EveryMacDotApp.txt
+
+# cask "miro"
+# cask "figma"
+cask "alfred"
+cask "bettertouchtool"
+cask "beyond-compare"
+cask "karabiner-elements"
+cask "ccmenu"
+cask "cmake"
+cask "discord"
+cask "docker"
+cask "dropbox"
+cask "firefox"
+brew "gh"
+brew "gifsicle"
+brew "git"
+cask "github"
+cask "google-chrome"
+cask "handbrake"
+cask "jetbrains-toolbox"
+cask "kaleidoscope"
+cask "little-snitch"
+cask "logitech-options"
+cask "milanote"
+cask "nextcloud"
+cask "nordvpn"
+brew "openjdk"
+cask "p4v"
+cask "slack"
+cask "spotify"
+cask "sublime-text"
+cask "syncalicious"
+cask "virtualbox"
+cask "vlc"
+cask "zoom"
 

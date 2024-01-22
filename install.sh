@@ -27,6 +27,9 @@ sh brew/install.sh
 # Source the updated .zshrc file
 source ~/.zshrc
 
+# install houdini
+#python sidefx/install_houdini.py -u HOUDINI_USERNAME -p HOUDINI_PASSWORD
+
 # After everything is installed, tweak some system settings,
 # and install some fonts
 sh SysSettings/setup.sh

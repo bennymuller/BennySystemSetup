@@ -46,7 +46,7 @@ Well, while your bravery is commendable, it might not lead to a long life. As lo
 This is what my current setup script looks like:
 
 ```shell
-curl -sSL https://github.com/laikmosh/System-Setup/raw/main/install.sh | sh
+curl -sSL https://github.com/bennymuller/BennySystemSetup/raw/main/install.sh | sh
 ```
 
 That's it. I wipe the computer, log back in, and paste it directly into the default terminal. No other dependencies required. Voila!
@@ -65,7 +65,7 @@ curl # Here, we're using 'curl' to grab content from a specific URL. Think of it
 
 -sSL # Now you can simply blend all the above superpowers into one with this.
 
-https://github.com/laikmosh/System-Setup/raw/main/install.sh # This is the link to the raw script file on GitHub. Our download source, if you will.
+https://github.com/bennymuller/BennySystemSetup/raw/main/install.sh # This is the link to the raw script file on GitHub. Our download source, if you will.
 
 | # And now, the pipe operator, it exists to pass the output of the previous command to the next command, in this case the downloaded file from the curl command will be passed to the sh command.
 
@@ -92,7 +92,7 @@ mkdir -p "$HOME/SystemSetupTmp"
 cd "$HOME/SystemSetupTmp" || exit
 
 # Download and unzip repository, exit script if download fails
-curl -L -o master.zip https://github.com/laikmosh/System-Setup/archive/refs/heads/main.zip
+curl -L -o master.zip https://github.com/bennymuller/BennySystemSetup/archive/refs/heads/main.zip
 unzip -o master.zip
 cd System-Setup-main || exit
 
@@ -136,8 +136,7 @@ source ~/.zshrc
 # Apple will warn you about it being unsafe teh first time you open it
 # Add to the list below all the apps you want to declare as safe to skip the warnings
 apps=(    
-    "/Applications/Google Chrome.app"    
-    # "/Applications/Visual Studio Code.app"
+    "/Applications/Google Chrome.app"
 )
 
 for app in "${apps[@]}"do    
@@ -259,4 +258,4 @@ Go to the repo in this [link](git), clone it, modify it to your needs and run it
 
 #### You are free to go
 
-But before you do, i have been looking for terminal commands to tweak mor system configurations but there doesnt seem to be a comprehensive list of commands, do you know some other system configurations that could be included in this file?
+But before you do, i have been looking for terminal commands to tweak more system configurations but there doesnt seem to be a comprehensive list of commands, do you know some other system configurations that could be included in this file?
